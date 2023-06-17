@@ -25,12 +25,12 @@ function buttonClickYes() {
         question.textContent = "بزاف ديال المفكرين والشخصيات مستعدين يعاونوك";
         choice1.textContent = "كيفاش؟"
         choice2Button.style.display = 'none'
-    } else if (question.textContent == "تقدر تبدا تقرا باش تعلم تكتب" || question.textContent == "تبغي تعيش تجارب مختلفة لي تخليك تفهم نفسك و تحسن من مستقبلك؟" || question.textContent == "بزاف ديال المفكرين والشخصيات مستعدين يعاونوك") {
+    } else if (question.textContent == "تقدر تبدا تقرا باش تعلم تكتب" || question.textContent == "تبغي تعيش تجارب مختلفة لي تخليك تفهم نفسك او تحسن من مستقبلك؟" || question.textContent == "بزاف ديال المفكرين والشخصيات مستعدين يعاونوك") {
         question.textContent = "يمكن ليك تبدا بكتاب";
         choice1.textContent = "رجع للبداية"
         choice2Button.style.display = 'none'
         read.style.display = 'inline-block'
-    } else if (question.textContent == "يمكن ليك تبدا بكتاب" || question.textContent == "تقدر تبدا تكتب أفكارك وتنظمها" || question.textContent == "المغرب محتل الرتبة 56 من أصل 57 على مستوى القراءة")
+    } else if (question.textContent == "يمكن ليك تبدا بكتاب" || question.textContent == " هنا تقدر تبدا تكتب أفكارك وتنظمها" || question.textContent == "واخا هكاك دي معاك متعاود. فراسك المغرب حتل الرتبة 56 من أصل 57 بلاد شاركات فدراسة لقياس تقدم مستوى القراءة في العالم")
     {
         question.textContent = "واش تعلمتي شي حاجة اليوم؟"
         choice2Button.style.display = 'inline-block'
@@ -48,15 +48,15 @@ function buttonClickNo() {
         question.textContent = "واش مهتم تعلم حوايج جداد؟";
     } else if (question.textContent == "واش مهتم تعلم حوايج جداد؟") {
         question.textContent = "تبغي تعيش تجارب مختلفة لي تخليك تفهم نفسك او تحسن من مستقبلك؟";
-    } else if (question.textContent == "تقدر تبدا تكتب أفكارك وتنظمها") {
-        question.textContent = "المغرب محتل الرتبة 56 من أصل 57 على مستوى القراءة";
+    } else if (question.textContent == " هنا تقدر تبدا تكتب أفكارك وتنظمها") {
+        question.textContent = "واخا هكاك دي معاك متعاود. فراسك المغرب حتل الرتبة 56 من أصل 57 بلاد شاركات فدراسة لقياس تقدم مستوى القراءة في العالم";
         states.style.display = 'inline-block'
     } else if (question.textContent == "واش تبغي تشارك معانا شنو تعلمتي؟") {
         question.textContent = "تقدر تبدا تقرا باش تعلم تكتب";
         choice1.textContent = "فين نلقى لكُتب"
         choice2.textContent = "معنديش مع القراية"
-    } else if (question.textContent == "تقدر تبدا تقرا باش تعلم تكتب" || question.textContent == "تبغي تعيش تجارب مختلفة لي تخليك تفهم نفسك و تحسن من مستقبلك؟"){
-        question.textContent = "المغرب محتل الرتبة 56 من أصل 57 على مستوى القراءة"
+    } else if (question.textContent == "تقدر تبدا تقرا باش تعلم تكتب" || question.textContent == "تبغي تعيش تجارب مختلفة لي تخليك تفهم نفسك او تحسن من مستقبلك؟"){
+        question.textContent = "واخا هكاك دي معاك متعاود. فراسك المغرب حتل الرتبة 56 من أصل 57 بلاد شاركات فدراسة لقياس تقدم مستوى القراءة في العالم"
         choice1.textContent = "رجع للبداية"
         choice2Button.style.display = 'none'
         states.style.display = 'inline-block'
