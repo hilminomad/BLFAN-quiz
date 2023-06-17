@@ -17,9 +17,9 @@ body{
 h1{
     font-size: 5rem;
     color: #C47037;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     @media (max-width: 760px){
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 }
@@ -81,7 +81,7 @@ h1{
         }
         @media (max-width: 460px)
         {
-            flex-direction: column;
+            flex-direction: column-reverse;
             font-size: 14px;
             padding: 10px 30px;
 
@@ -116,6 +116,9 @@ h1{
         }
         @media (max-width: 760px){
             margin-left: 0;
+        }
+        @media (max-width: 460px){
+            margin-right: 0;
         }
 
     }
@@ -152,10 +155,14 @@ h1{
             font-size: 3rem;
             color: #F0901D;
             padding: 10px;
-            margin: 2rem 0;
+            margin: 1rem 0 4rem 0;
             border: 2px solid black;
             border-radius: 8px;
             margin-left: 0 1rem;
+            @media (max-width: 760px){
+                font-size: 1.6rem;
+                margin: 1rem 0;
+            }
         }
     }
 
