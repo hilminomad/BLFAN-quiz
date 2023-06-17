@@ -15,19 +15,25 @@
                 </div>
                 <div class="quiz__other_logos">
                     <img src="https://res.cloudinary.com/dvvsyxugn/image/upload/v1671176420/Logo_Connect_Institute_xekz32.png"" alt="Connect Institute logo">
-                    <img src="https://res.cloudinary.com/dvvsyxugn/image/upload/v1671176435/Logo_UM6P_ttl8vg.png" alt="UM6P logo">
                     <img src="https://res.cloudinary.com/dvvsyxugn/image/upload/v1671176406/Logo_-_ACT_School_cki9cj.png" alt="ACT School logo">
+                    <img src="https://res.cloudinary.com/dvvsyxugn/image/upload/v1671176435/Logo_UM6P_ttl8vg.png" alt="UM6P logo">
+                    
                 </div>
             </div>
             <div class="quiz__question_container">
-                <h1 class="quiz_question">واش تعلمتي شي حاجة ليوم؟</h1>
-                <div class="quiz__answer_container">
+                <h1 class="quiz_question" id="question">واش تعلمتي شي حاجة اليوم؟</h1>
+                <div class="quiz__statement">
+                    <a href="http://" id="read">دخل تقرا</a>
+                    <a href="http://" id="write">دخل تكتب</a>
+                    <a href="http://" id="states">شوف الترتيب</a>
+                </div>
+                <div class="quiz__answer_container" id="gap">
                     <div class="quiz__answer_button_container">
-                        <button class="quiz__answer_button"><p>لا</p></button>
-                        <div class="quiz__answer_shadow"></div>
+                        <button class="quiz__answer_button" id="choice2Button"><p id="choice2">لا</p></button>
+                        <div class="quiz__answer_shadow" ></div>
                     </div> 
-                    <div class="quiz__answer_button_container">
-                        <button class="quiz__answer_button"><p>نعم</p></button>
+                    <div class="quiz__answer_button_container" >
+                        <button class="quiz__answer_button" id="choice1Button"><p id="choice1">نعم</p></button>
                         <div class="quiz__answer_shadow"></div>
                     </div>
                         
@@ -57,6 +63,8 @@
                 </div>
             </div>
         </div>
+        <img src="https://res.cloudinary.com/dvvsyxugn/image/upload/v1686932659/B_LFAN_LOGO_2_2_s0lezj.png" alt="decoration" class="quiz__decoration">
     </section>
+    <script src="/script.js"></script>
 </body>
 </html>
