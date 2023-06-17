@@ -16,19 +16,29 @@ h1 {
   color: #C47037;
   margin-bottom: 4rem;
 }
+@media (max-width: 760px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 .quiz {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  padding: 2rem 0;
+  position: relative;
 }
 .quiz__container {
   width: 100%;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 760px) {
+  .quiz__container {
+    padding: 1rem;
+  }
 }
 .quiz__nav {
   display: flex;
@@ -38,19 +48,42 @@ h1 {
 .quiz__other_logos img {
   height: 4rem;
   width: auto;
-  margin-left: 1em;
+  margin-left: 2rem;
+}
+@media (max-width: 760px) {
+  .quiz__other_logos img {
+    height: 2.5rem;
+    margin-left: 1rem;
+  }
 }
 .quiz__blfan_logo img {
   height: 6rem;
   width: auto;
 }
+@media (max-width: 760px) {
+  .quiz__blfan_logo img {
+    height: 3.5rem;
+  }
+}
 .quiz__answer_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
   font-size: 32px;
   position: relative;
+}
+@media (max-width: 760px) {
+  .quiz__answer_container {
+    font-size: 24px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 460px) {
+  .quiz__answer_container {
+    flex-direction: column;
+    font-size: 14px;
+    padding: 10px 30px;
+  }
 }
 .quiz__answer_container button {
   padding: 10px 70px;
@@ -61,13 +94,56 @@ h1 {
 }
 .quiz__answer_button_container {
   position: relative;
+  margin: 3rem 1rem 0 1rem;
+}
+.quiz__answer_button_container:hover {
+  cursor: pointer;
+}
+.quiz__answer_button_container:hover .quiz__answer_shadow {
+  display: none;
+}
+.quiz__answer_button_container:hover button {
+  background-color: #C47037;
+  color: #ffffff;
+}
+@media (max-width: 760px) {
+  .quiz__answer_button_container {
+    margin-left: 0;
+  }
 }
 .quiz__answer_shadow {
+  top: 0;
+  left: 0;
   position: absolute;
   z-index: -1;
   background-color: #000000;
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  margin: -56px 0 0 6px;
+  margin: 6px 0 0 6px;
+}
+.quiz__decoration {
+  position: absolute;
+  height: 100%;
+  z-index: -4;
+}
+@media (max-width: 760px) {
+  .quiz__decoration {
+    width: 50%;
+    height: auto;
+  }
+}
+.quiz__statement:hover a {
+  color: #C47037;
+}
+.quiz__statement a {
+  display: none;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #F0901D;
+  padding: 10px;
+  margin: 2rem 0;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-left: 0 1rem;
 }/*# sourceMappingURL=style.css.map */
