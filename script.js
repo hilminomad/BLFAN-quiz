@@ -30,7 +30,7 @@ function buttonClickYes() {
         choice1.textContent = "رجع للبداية"
         choice2Button.style.display = 'none'
         read.style.display = 'inline-block'
-    } else if (question.textContent == "يمكن ليك تبدا بكتاب" || question.textContent == "تقدر تبدا تكتب أفكارك وتنظمها" || question.textContent == "المغرب محتل الرتبة 56 من أصل 57 على مستوى القراءة.")
+    } else if (question.textContent == "يمكن ليك تبدا بكتاب" || question.textContent == "تقدر تبدا تكتب أفكارك وتنظمها" || question.textContent == "المغرب محتل الرتبة 56 من أصل 57 على مستوى القراءة")
     {
         question.textContent = "واش تعلمتي شي حاجة اليوم؟"
         choice2Button.style.display = 'inline-block'
